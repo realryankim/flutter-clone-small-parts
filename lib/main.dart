@@ -1,4 +1,4 @@
-import 'package:fluter_clone_small_parts/pages/main_screen.dart';
+import 'package:fluter_clone_small_parts/src/main_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
