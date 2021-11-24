@@ -1,9 +1,9 @@
-import 'package:fluter_clone_small_parts/src/examples/whats_app_bottom_navigation_bar/controller/app_controller.dart';
-import 'package:fluter_clone_small_parts/src/examples/whats_app_bottom_navigation_bar/pages/calls.dart';
-import 'package:fluter_clone_small_parts/src/examples/whats_app_bottom_navigation_bar/pages/camera.dart';
-import 'package:fluter_clone_small_parts/src/examples/whats_app_bottom_navigation_bar/pages/chats.dart';
-import 'package:fluter_clone_small_parts/src/examples/whats_app_bottom_navigation_bar/pages/settings.dart';
-import 'package:fluter_clone_small_parts/src/examples/whats_app_bottom_navigation_bar/pages/status.dart';
+import 'package:flutter_clone_small_parts/src/examples/whats_app_bottom_navigation_bar/controller/app_controller.dart';
+import 'package:flutter_clone_small_parts/src/examples/whats_app_bottom_navigation_bar/pages/calls.dart';
+import 'package:flutter_clone_small_parts/src/examples/whats_app_bottom_navigation_bar/pages/camera.dart';
+import 'package:flutter_clone_small_parts/src/examples/whats_app_bottom_navigation_bar/pages/chats.dart';
+import 'package:flutter_clone_small_parts/src/examples/whats_app_bottom_navigation_bar/pages/settings.dart';
+import 'package:flutter_clone_small_parts/src/examples/whats_app_bottom_navigation_bar/pages/status.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -47,6 +47,8 @@ class App extends GetView<AppController> {
             showSelectedLabels: true,
             selectedItemColor: Colors.blue,
             unselectedItemColor: Colors.grey,
+            selectedFontSize: 12.0,
+            unselectedFontSize: 12.0,
             onTap: controller.changePageIndex,
             items: [
               BottomNavigationBarItem(

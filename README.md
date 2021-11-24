@@ -1,4 +1,4 @@
-# fluter_clone_small_parts
+# flutter_clone_small_parts
 
 A new Flutter project.
 

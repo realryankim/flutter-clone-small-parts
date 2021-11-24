@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.fluter_clone_small_parts">
+    package="com.example.flutter_clone_small_parts">
    <application
-        android:label="fluter_clone_small_parts"
+        android:label="flutter_clone_small_parts"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
