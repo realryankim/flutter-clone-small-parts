@@ -25,7 +25,7 @@ class _ListViewLayoutState extends State<ListViewLayout> {
 
       return GestureDetector(
         onTap: () {
-          Get.to(item.page);
+          Get.to(() => item.page);
         },
         child: Container(
           decoration: BoxDecoration(

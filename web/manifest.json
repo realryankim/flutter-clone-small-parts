@@ -1,6 +1,6 @@
 {
-    "name": "fluter_clone_small_parts",
-    "short_name": "fluter_clone_small_parts",
+    "name": "flutter_clone_small_parts",
+    "short_name": "flutter_clone_small_parts",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

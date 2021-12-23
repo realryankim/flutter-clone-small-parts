@@ -8,8 +8,8 @@ enum RouteName {
   SETTINGS,
 }
 
-class AppController extends GetxService {
-  static AppController get to => Get.find();
+class WhatsAppController extends GetxService {
+  static WhatsAppController get to => Get.find();
 
   RxInt currentIndex = 0.obs;
 

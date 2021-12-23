@@ -1,4 +1,4 @@
-import 'package:flutter_clone_small_parts/src/examples/whats_app_bottom_navigation_bar/controller/app_controller.dart';
+import 'package:flutter_clone_small_parts/src/examples/whats_app_bottom_navigation_bar/controller/whats_app_controller.dart';
 import 'package:flutter_clone_small_parts/src/examples/whats_app_bottom_navigation_bar/pages/calls.dart';
 import 'package:flutter_clone_small_parts/src/examples/whats_app_bottom_navigation_bar/pages/camera.dart';
 import 'package:flutter_clone_small_parts/src/examples/whats_app_bottom_navigation_bar/pages/chats.dart';
@@ -7,14 +7,14 @@ import 'package:flutter_clone_small_parts/src/examples/whats_app_bottom_navigati
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-class App extends GetView<AppController> {
-  const App({Key? key}) : super(key: key);
+class WhatsApp extends GetView<WhatsAppController> {
+  const WhatsApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    // It would be better to call Get.put(AppController()) in separate bindings file
+    // It would be better to call Get.put(WhatsAppController()) in separate bindings file
     // using initialBinding argument in main.dart
-    Get.put(AppController());
+    Get.put(WhatsAppController());
 
     return Scaffold(
       body: Obx(() {
