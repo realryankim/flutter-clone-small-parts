@@ -1,7 +1,9 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_clone_small_parts/src/examples/challengers_tabBar_slider_custromScrollView/controller/home_controller.dart';
-import 'package:flutter_clone_small_parts/src/examples/challengers_tabBar_slider_custromScrollView/model/main_challengers_model.dart';
+import 'package:flutter_clone_small_parts/src/examples/challengers_tabBar_slider/controller/home_controller.dart';
+import 'package:flutter_clone_small_parts/src/examples/challengers_tabBar_slider/model/main_challengers_model.dart';
+import 'package:flutter_clone_small_parts/src/examples/challengers_tabBar_slider/widget/challenge_category.dart';
+import 'package:flutter_clone_small_parts/src/examples/challengers_tabBar_slider/widget/popular_challenge.dart';
 import 'package:get/get.dart';
 
 class Home extends GetView<HomeController> {
@@ -102,13 +104,21 @@ class Home extends GetView<HomeController> {
 
   Widget _makeImageList(List<MainChallengersModel> imageList) {
     return CustomScrollView(
-      // controller: ,
       slivers: [
         SliverList(
           delegate: SliverChildListDelegate(
             [
               // 이미지 슬라이더
               _makeSliderImage(imageList),
+              // 챌린지 카테고리
+              SizedBox(height: 20.0),
+              ChallengeCategory(),
+              SizedBox(height: 20.0),
+              ChallengeCategory(),
+              SizedBox(height: 20.0),
+              // 인기 챌린지
+              PopularChallenge(),
+              SizedBox(height: 20.0),
             ],
           ),
         ),

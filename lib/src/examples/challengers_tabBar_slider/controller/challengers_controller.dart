@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_clone_small_parts/src/examples/challengers_tabBar_slider_custromScrollView/utils/tab_list.dart';
+import 'package:flutter_clone_small_parts/src/examples/challengers_tabBar_slider/utils/tab_list.dart';
 import 'package:get/get.dart';
 
 class ChallengersController extends GetxController

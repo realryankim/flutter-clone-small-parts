@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_clone_small_parts/src/examples/challengers_tabBar_slider_custromScrollView/controller/challengers_controller.dart';
-import 'package:flutter_clone_small_parts/src/examples/challengers_tabBar_slider_custromScrollView/pages/home.dart';
-import 'package:flutter_clone_small_parts/src/examples/challengers_tabBar_slider_custromScrollView/pages/new_challenge_page.dart';
-import 'package:flutter_clone_small_parts/src/examples/challengers_tabBar_slider_custromScrollView/pages/popular_challenge_page.dart';
-import 'package:flutter_clone_small_parts/src/examples/challengers_tabBar_slider_custromScrollView/pages/recommended_challenge_page.dart';
+import 'package:flutter_clone_small_parts/src/examples/challengers_tabBar_slider/controller/challengers_controller.dart';
+import 'package:flutter_clone_small_parts/src/examples/challengers_tabBar_slider/pages/home.dart';
+import 'package:flutter_clone_small_parts/src/examples/challengers_tabBar_slider/pages/new_challenge_page.dart';
+import 'package:flutter_clone_small_parts/src/examples/challengers_tabBar_slider/pages/popular_challenge_page.dart';
+import 'package:flutter_clone_small_parts/src/examples/challengers_tabBar_slider/pages/recommended_challenge_page.dart';
 import 'package:get/get.dart';
 
 class Challengers extends GetView<ChallengersController> {

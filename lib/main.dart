@@ -1,4 +1,4 @@
-import 'package:flutter_clone_small_parts/src/examples/challengers_tabBar_slider_custromScrollView/binding/binding.dart';
+import 'package:flutter_clone_small_parts/src/examples/challengers_tabBar_slider/binding/binding.dart';
 import 'package:flutter_clone_small_parts/src/main_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
