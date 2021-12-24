@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_clone_small_parts/src/examples/challengers_tabBar_slider/controller/home_controller.dart';
@@ -15,10 +16,16 @@ class Home extends GetView<HomeController> {
     int currentPage = index + 1;
     int totalPage = imageList.length;
     return Stack(
-      // issue: 이미지 로드가 너무 늦다. 이미지 파일 크기가 커서 그런걸까?
       children: [
-        Image.network(
-          urlImage,
+        // cached_network_image
+        CachedNetworkImage(
+          imageUrl: urlImage,
+          placeholder: (context, url) => Container(
+            height: 230,
+            child: Center(
+              child: CircularProgressIndicator(),
+            ),
+          ),
           fit: BoxFit.cover,
           width: width,
         ),
@@ -89,7 +96,7 @@ class Home extends GetView<HomeController> {
               options: CarouselOptions(
                 height: 200,
                 autoPlay: true,
-                autoPlayInterval: Duration(seconds: 8),
+                autoPlayInterval: Duration(seconds: 5),
                 initialPage: 0,
                 viewportFraction: 1,
                 onPageChanged: (index, reason) {},

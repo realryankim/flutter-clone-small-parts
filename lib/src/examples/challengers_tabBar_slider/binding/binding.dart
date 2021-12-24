@@ -5,7 +5,6 @@ import 'package:get/get.dart';
 class Binding implements Bindings {
   @override
   void dependencies() {
-    // TODO: binding 나누기
     Get.put(ChallengersRepository(), permanent: true);
   }
 }

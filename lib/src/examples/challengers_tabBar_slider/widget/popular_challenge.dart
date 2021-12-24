@@ -4,43 +4,6 @@ import 'package:get/get.dart';
 class PopularChallenge extends StatelessWidget {
   const PopularChallenge({Key? key}) : super(key: key);
 
-  // Widget _makeGridView() {
-  //   return SliverPadding(
-  //     padding: EdgeInsets.symmetric(horizontal: 15.0),
-  //     sliver: SliverGrid(
-  //       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-  //         crossAxisCount: 2,
-  //         mainAxisExtent: 10.0,
-  //         crossAxisSpacing: 10.0,
-  //       ),
-  //       delegate: SliverChildListDelegate(
-  //         List.generate(
-  //           4,
-  //           (index) {
-  //             return Container(
-  //               child: Column(
-  //                 crossAxisAlignment: CrossAxisAlignment.stretch,
-  //                 children: [
-  //                   ClipRRect(
-  //                     borderRadius: BorderRadius.circular(6.0),
-  //                     child: Container(color: Colors.grey, height: 120),
-  //                   ),
-  //                   SizedBox(height: 8.0),
-  //                   Text('공식 챌린지'),
-  //                   SizedBox(height: 8.0),
-  //                   Text('100 Days of Coding'),
-  //                   SizedBox(height: 8.0),
-  //                   Text('오늘부터 시작'),
-  //                 ],
-  //               ),
-  //             );
-  //           },
-  //         ),
-  //       ),
-  //     ),
-  //   );
-  // }
-
   Widget _makeGridView(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 15.0),
@@ -114,10 +77,7 @@ class PopularChallenge extends StatelessWidget {
             ],
           ),
         ),
-        // TODO: TabBar
         SizedBox(height: 20.0),
-
-        // GridView
         _makeGridView(context),
       ],
     );
